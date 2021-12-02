@@ -125,7 +125,7 @@ public class demo {
         driver.manage().timeouts().implicitlyWait(4000, TimeUnit.MILLISECONDS);
         //create account(email enter)
         driver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
-        driver.findElement(By.cssSelector("[name='email_create']")).sendKeys("uswashahmim099@gmail.com");
+        driver.findElement(By.cssSelector("[name='email_create']")).sendKeys("uswashahmim029@gmail.com");
         driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/div[1]/form/div/div[3]/button/span")).click();
         sleep(2000);
         //create account(registration form)
