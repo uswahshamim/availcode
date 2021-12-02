@@ -157,12 +157,9 @@ public class demo {
         driver.findElement(By.id("phone")).sendKeys("03152914647");
         driver.findElement(By.id("phone_mobile")).sendKeys("03320374386");
         driver.findElement(By.id("alias")).sendKeys("PECHS block 6 karachi");
+        //submit the registration form
         driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/form/div[4]/button/span")).click();
         sleep(2000);
-        //submit the registration form
-        driver.findElement(By.name("submitAccount")).click();
-        driver.manage().timeouts().implicitlyWait(8000, TimeUnit.MILLISECONDS);
-        //Validation of user creation
         String userVerification=driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a")).getText();
         if (userVerification.contains("uswahshamim")) {
             System.out.println("User Verified,Test case Passed");
@@ -171,17 +168,8 @@ public class demo {
         }
         driver.manage().timeouts().implicitlyWait(4000, TimeUnit.MILLISECONDS);
         driver.quit();
-        //signout
-        //driver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/a")).click();
-        //driver.manage().timeouts().implicitlyWait(8000, TimeUnit.MILLISECONDS);
-        //forgot password
-        //driver.navigate().back();
-        //driver.findElement(By.linkText("Forgot your password?")).click();
-        //email.sendKeys("uswahshamim770@gmail.com");
-        //driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/form/fieldset/p/button/span")).click();
-        //driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/ul/li/a/span")).click();
-    }
-
+    
+    @Test 
     public static void main(String[] args) throws InterruptedException {
         demo obj= new demo();
         obj.browserActivity();
