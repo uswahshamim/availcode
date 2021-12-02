@@ -1,4 +1,5 @@
 # availcode
+if code gives error at registration means the gamil is already used for account creation so just change the gmail
 1st step is login with credentials described in code
 2nd step is searching the desired product
 3rd is fetching and printing the price of search item
