@@ -168,7 +168,7 @@ public class demo {
         }
         driver.manage().timeouts().implicitlyWait(4000, TimeUnit.MILLISECONDS);
         driver.quit();
-    
+    }
     @Test 
     public static void main(String[] args) throws InterruptedException {
         demo obj= new demo();
